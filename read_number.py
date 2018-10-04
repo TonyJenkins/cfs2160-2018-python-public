@@ -2,7 +2,7 @@
     Sample code for reading a number, and checking that it's an integer.
 """
 
-while True:
+while 1:
     try:
         number = int (input ('Enter a number: '))
         if number > 0:
