@@ -1,4 +1,5 @@
 eggs = 14
+eggs_in_box = 12
 
-print ('We can fill', eggs // 6, 'boxes of eggs.')
-print ('We will have', eggs % 6, 'eggs left over to make an omelette.')
+print ('We can fill', eggs // eggs_in_box, 'boxes of eggs.')
+print ('We will have', eggs % eggs_in_box, 'eggs left over to make an omelette.')
