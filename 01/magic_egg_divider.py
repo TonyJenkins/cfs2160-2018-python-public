@@ -1,3 +1,7 @@
+"""
+   Divide eggs into boxes.
+"""
+
 eggs = 14
 eggs_in_box = 12
 
