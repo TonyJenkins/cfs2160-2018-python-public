@@ -9,6 +9,6 @@ while 1:
             break
         print ('Positive integer, please.')
     except ValueError:
-        print ('Enter an integer, dammit.')
+        print ('Please enter an integer.')
 
 print ('The number you entered was', number)
