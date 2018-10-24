@@ -11,11 +11,7 @@ total_marks = mark_1 + mark_2 + mark_3 + mark_4 + mark_5
 average_mark = total_marks / 5
 
 print ()
-print ('Final Mark for ' + name + ' is ' + str (average_mark) + '.')
+print ('Final Mark for ' + name + ' is ' + str (average_mark))
 
-if average_mark >= 70.0:
-    print ('Cool Beans! ' + name + ' has a Distinction!')
-elif average_mark >= 50.0:
+if average_mark >= 50.0:
     print ('Congratulations! ' + name + ' has passed!')
-else:
-    print ('Sadly, ' + name + ' has failed. What a pity.')
