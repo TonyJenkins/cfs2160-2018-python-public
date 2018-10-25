@@ -11,17 +11,20 @@ __email__   = "tony.jenkins@elder-studios.co.uk"
 __date__    = "2018-09-30"
 __license__ = "Unlicense"
 
+NUMBER_OF_MARKS = 8
+
 name = input ('Enter the student\'s name: ')
 
-mark_1 = int (input ('Enter first result:  '))
-mark_2 = int (input ('Enter second result: '))
-mark_3 = int (input ('Enter third result:  '))
-mark_4 = int (input ('Enter fourth result: '))
-mark_5 = int (input ('Enter fifth result:  '))
+mark_list = []
 
-total_marks = mark_1 + mark_2 + mark_3 + mark_4 + mark_5
+for mark in range (NUMBER_OF_MARKS):
+    next_mark = int (input ('Enter the next mark: '))
+    if next_mark in range (0, 101):
+        mark_list.append (next_mark)
+    else:
+        print ('Out of range. Ignoring...')
 
-average_mark = total_marks / 5
+average_mark = sum (mark_list) / len (mark_list)
 
 print ()
 print ('Final Mark for ' + name + ' is ' + str (average_mark))
