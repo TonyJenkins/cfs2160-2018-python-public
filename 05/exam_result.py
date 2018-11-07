@@ -1,3 +1,17 @@
+#!/usr/bin/env python3
+
+"""
+
+    The Ultimate Exam Result Calculator
+
+    Finds the average of the entered marks, and determines whether the student has passed, failed
+    or scored a distinction.
+
+"""
+
+__author__    = "Tony Jenkins"
+__email__     = "tony.jenkins@elder-studios.co.uk"
+__date__      = "2018-09-16"
 
 Number_of_Results = 5
 
