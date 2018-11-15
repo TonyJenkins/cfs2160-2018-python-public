@@ -10,6 +10,12 @@ __date__      = "2018-11-15"
 
 def valid_email (email, domain):
 
+    if '.' not in domain:
+        raise ValueError ("Domain invalid: not . in it.")
+
+    if domain[0] == '.' or domain [-1] == '.':
+        raise ValueError ("Domain invalid: . at start or end.")
+
     if email.count ('@') != 1:
         return False
 
@@ -19,11 +25,6 @@ def valid_email (email, domain):
     if email [(email.find ('@') + 1):] != domain:
         return False
 
-    if '.' not in domain:
-        return False
-
-    if domain[0] == '.' or domain [-1] == '.':
-        return False
 
     return True
 
