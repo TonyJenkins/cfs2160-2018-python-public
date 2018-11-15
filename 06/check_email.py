@@ -16,7 +16,12 @@ def valid_email (email):
     if email [0] == '@':
         return False
 
-    if email.rfind ('.') < email.find ('@'):
+    domain = email [email.find ('@') + 1:]
+
+    if not '.' in domain:
+        return False
+
+    if domain [0] == '.':
         return False
 
     return True

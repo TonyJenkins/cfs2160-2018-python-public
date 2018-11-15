@@ -19,9 +19,16 @@ def valid_email (email, domain):
     if email [(email.find ('@') + 1):] != domain:
         return False
 
+    if '.' not in domain:
+        return False
+
+    if domain[0] == '.' or domain [-1] == '.':
+        return False
+
     return True
 
 if __name__ == '__main__':
     print (valid_email ("fred@pop.ac.uk", "pop.ac.uk"))
     print (valid_email ("fredpop.ac.uk", "pop.ac.uk"))
     print (valid_email ("fred@pop.ac.uk", "pop.co.uk"))
+    print (valid_email("fred@.ac.uk", ".ac.uk"))
